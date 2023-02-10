@@ -321,14 +321,15 @@ html {
   top: 5rem;
   right: 15rem;
   box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 
 .video {
   width: 100%;
   height: 100%;
-  padding-top: 8rem;
   object-fit: cover;
   opacity: 0.3;
+  transition: 0.3s;
 }
 
 .controls {
@@ -336,6 +337,12 @@ html {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100% - 0.4rem));
+  transition: 0.4s;
+}
+
+.video-wrapper:hover .controls{
+  transform: translateY(0);
 }
 
 .video-bar-wrapper {
@@ -349,8 +356,9 @@ html {
 
 .video-bar {
   height: 100%;
-  width: 20%;
+  width: 0;
   background-color: #d30819;
+  transition: 0.2s linear;
 }
 
 .buttons {
@@ -388,13 +396,13 @@ html {
 }
 
 .fa-quote-left {
-  font-size: 5rem;
   align-self: flex-start;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 
 .fa-quote-right {
-  font-size: 5rem;
   align-self: flex-end;
+  font-size: 5rem;
 }
 /* end of section 2 */
