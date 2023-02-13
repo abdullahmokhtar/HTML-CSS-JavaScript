@@ -41,6 +41,8 @@ html {
   padding: 3rem;
   transition: 0.5s;
   animation: animateNavBar 1s 0.5s forwards;
+  z-index: 10;
+
 }
 
 @keyframes animateNavBar {
@@ -127,6 +129,7 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
+  z-index: 12;
 }
 
 .line {
