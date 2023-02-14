@@ -11,7 +11,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -29,6 +28,11 @@ html {
   background-color: #ddd;
 }
 
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
 /* end of common styles */
 
 /* navbar */
@@ -38,12 +42,10 @@ html {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: -8rem;
-  z-index: 1;
-  padding: 3rem;
+  /* padding: 3rem; */
   transition: 0.5s;
   animation: animateNavBar 1s 0.5s forwards;
   z-index: 10;
-
 }
 
 @keyframes animateNavBar {
@@ -123,7 +125,6 @@ html {
   width: 4rem;
   height: 4rem;
   position: fixed;
-  z-index: 2;
   top: 2rem;
   right: 4rem;
   display: flex;
@@ -628,7 +629,8 @@ html {
   flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 1.5rem;
   background-color: #444;
   color: #eee;
@@ -647,7 +649,7 @@ html {
   min-height: 5.5rem;
 }
 
-.contact-form input[type="submit"]{
+.contact-form input[type="submit"] {
   background-color: #7a1010;
   text-transform: uppercase;
   cursor: pointer;
@@ -670,7 +672,7 @@ footer {
   padding: 0 10rem;
 }
 
-.footer-nav a{
+.footer-nav a {
   font-size: 2rem;
   color: #ccc;
   margin-right: 3rem;
@@ -688,3 +690,202 @@ footer {
   color: #ddd;
 }
 /* end of footer */
+
+/* Responsive */
+@media (max-width: 1800px) {
+  .video-wrapper {
+    width: 90rem;
+    height: 45rem;
+    right: 10rem;
+  }
+
+  .section-2-paragraph {
+    width: 90rem;
+    right: 10rem;
+  }
+
+  .section-3 .section-heading-line {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1650px) {
+  html {
+    font-size: 57%;
+  }
+  .video-wrapper {
+    width: 85rem;
+    height: 40rem;
+    right: 5rem;
+  }
+
+  .section-2-paragraph {
+    width: 85rem;
+    right: 5rem;
+    bottom: 10rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .section-heading-line {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+
+  .banner-heading span {
+    font-size: 10rem;
+  }
+
+  .banner-paragraph {
+    width: 45rem;
+    font-size: 3rem;
+  }
+
+  .section-2,
+  .section-3,
+  .section-4 {
+    flex-direction: column;
+  }
+
+  .section-2 {
+    height: 120vh;
+  }
+
+  .video-wrapper {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+  }
+
+  .section-2-paragraph {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+  }
+
+  .section-3 {
+    height: auto;
+    padding: 5rem 0 10rem 0;
+  }
+
+  .section-3 .section-heading {
+    margin-bottom: 7rem;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+
+  .section-4 {
+    height: auto;
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+
+  .banner {
+    top: 25%;
+  }
+
+  .banner-heading span {
+    font-size: 8rem;
+  }
+
+  footer {
+    padding: 0 5rem;
+  }
+
+  .footer-nav a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  .section-2 {
+    height: 100vh;
+  }
+
+  .contact-details li {
+    margin: 3rem 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-nav {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 30%;
+  }
+
+  .banner-heading span {
+    font-size: 4.5rem;
+    letter-spacing: 2rem;
+  }
+
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+    3% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+    25% {
+      transform: translateZ(0);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+    28% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+    100% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 2rem;
+    }
+  }
+
+  .video-wrapper {
+    width: 60rem;
+  }
+
+  .section-2-paragraph {
+    width: 60rem;
+  }
+
+  .contact-details li {
+    width: 18rem;
+    margin: 3rem 1rem;
+  }
+
+  .contact-form {
+    width: 60rem;
+  }
+}
+/* end of Responsive */

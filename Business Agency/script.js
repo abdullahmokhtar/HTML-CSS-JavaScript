@@ -8,11 +8,11 @@ menuElement.addEventListener("click", () => {
   menuElement.classList.toggle("change");
 });
 
-linkNavBarElements.forEach(element => {
-  element.onclick = function(){
+linkNavBarElements.forEach((element) => {
+  element.onclick = function () {
     navBarElement.classList.toggle("change");
     menuElement.classList.toggle("change");
-  }
+  };
 });
 // section 2
 let btnElement = document.querySelector(".buttons i");
