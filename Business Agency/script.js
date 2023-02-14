@@ -1,9 +1,18 @@
 let menuElement = document.querySelector(".menu");
 let navBarElement = document.querySelector(".navbar");
 let navListElement = document.querySelector(".nav-list");
+let linkNavBarElements = document.querySelectorAll(".nav-list a");
+
 menuElement.addEventListener("click", () => {
   navBarElement.classList.toggle("change");
   menuElement.classList.toggle("change");
+});
+
+linkNavBarElements.forEach(element => {
+  element.onclick = function(){
+    navBarElement.classList.toggle("change");
+    menuElement.classList.toggle("change");
+  }
 });
 // section 2
 let btnElement = document.querySelector(".buttons i");
