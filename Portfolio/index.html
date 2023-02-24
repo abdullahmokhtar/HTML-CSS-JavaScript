@@ -7,7 +7,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +24,7 @@
   <body>
     <div class="container">
       <!-- section 1 -->
-      <section id="section-1">
+      <section class="section-1 center">
         <h1 class="section-1-heading">Web Developer</h1>
         <img
           src="./images/abdullahmokhtar.png"
@@ -28,11 +34,74 @@
         <h3 class="person-name">Abdullah Mokhtar</h3>
         <a
           href="https://github.com/abdullahmokhtar?tab=repositories"
-          class="section-1-btn" target="_blank"
+          class="section-1-btn"
+          target="_blank"
           >Projects</a
         >
       </section>
       <!-- end of section 1 -->
+
+      <!-- navbar -->
+      <nav class="navbar center">
+        <a href="#" class="navbar-link">Home</a>
+        <a href="#" class="navbar-link">About</a>
+        <a href="#" class="navbar-link">Portfolio</a>
+        <a href="#" class="navbar-link">Contact</a>
+      </nav>
+      <!-- end of navbar -->
+      <!-- Section 2 -->
+      <section class="section-2">
+        <h1 class="section-2-heading">About Me</h1>
+        <ul class="progress-bars-wrapper">
+          <li class="progress-bar">
+            <p class="progress-text">HTML <span>97</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">CSS <span>89</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">JavaScript <span>95</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">Python <span>80</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">React js <span>90</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">NodeJs <span>92</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+          <li class="progress-bar">
+            <p class="progress-text">MongoDb <span>95</span>%</p>
+            <div class="progress-percent"></div>
+          </li>
+        </ul>
+        <ul class="services">
+          <li class="service">
+            <i class="far fa-lightbulb"></i>
+            <h2 class="service-heading">Creative</h2>
+          </li>
+          <li class="service">
+            <i class="fas fa-cut"></i>
+            <h2 class="service-heading">Problem Solving</h2>
+          </li>
+          <li class="service">
+            <i class="fas fa-tachometer-alt"></i>
+            <h2 class="service-heading">Fast</h2>
+          </li>
+          <li class="service">
+            <i class="fas fa-rocket"></i>
+            <h2 class="service-heading">Dynamic</h2>
+          </li>
+        </ul>
+      </section>
+      <!-- End of section 2 -->
     </div>
   </body>
 </html>
