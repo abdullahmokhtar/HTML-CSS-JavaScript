@@ -24,7 +24,7 @@
   <body>
     <div class="container">
       <!-- section 1 -->
-      <section class="section-1 center">
+      <section class="section-1 center" id="home">
         <h1 class="section-1-heading">Web Developer</h1>
         <img
           src="./images/abdullahmokhtar.png"
@@ -43,22 +43,22 @@
 
       <!-- navbar -->
       <nav class="navbar center">
-        <a href="#" class="navbar-link">Home</a>
-        <a href="#" class="navbar-link">About</a>
-        <a href="#" class="navbar-link">Portfolio</a>
-        <a href="#" class="navbar-link">Contact</a>
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#portfolio" class="navbar-link">Portfolio</a>
+        <a href="#contact" class="navbar-link">Contact</a>
       </nav>
       <!-- end of navbar -->
       <!-- Section 2 -->
-      <section class="section-2">
-        <h1 class="section-2-heading">About Me</h1>
+      <section class="section-2" id="about">
+        <h1 class="section-heading section-2-heading">About Me</h1>
         <ul class="progress-bars-wrapper">
           <li class="progress-bar">
             <p class="progress-text">HTML <span>97</span>%</p>
             <div class="progress-percent"></div>
           </li>
           <li class="progress-bar">
-            <p class="progress-text">CSS <span>89</span>%</p>
+            <p class="progress-text">CSS <span>80</span>%</p>
             <div class="progress-percent"></div>
           </li>
           <li class="progress-bar">
@@ -102,6 +102,135 @@
         </ul>
       </section>
       <!-- End of section 2 -->
+
+      <!-- Section 3 -->
+      <section class="section-3" id="portfolio">
+        <h1 class="section-heading">My Projects</h1>
+        <ul class="projects-wrapper center">
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">architect website</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-1.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">Budget App</h2>
+              <h4 class="project-technologies">ReactJs</h4>
+            </div>
+            <img src="./images/project-2.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">Wine House</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-3.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">task manager</h2>
+              <h4 class="project-technologies">ReactJs</h4>
+            </div>
+            <img src="./images/project-4.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">the road</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-5.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">food recipe app</h2>
+              <h4 class="project-technologies">ReactJs</h4>
+            </div>
+            <img src="./images/project-6.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">Slide Show</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-7.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">Hamburger Menu</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-8.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+          <li class="project">
+            <div class="project-text">
+              <h2 class="project-name">CSS grid menu</h2>
+              <h4 class="project-technologies">HTML / CSS / JS</h4>
+            </div>
+            <img src="./images/project-9.jpg" alt="" class="project-img" />
+            <a href="#" class="project-link" target="_blank">Go To Video</a>
+          </li>
+        </ul>
+      </section>
+      <!-- End of Section 3 -->
+
+      <!-- section 4 -->
+      <section class="section-4" id="contact">
+        <h1 class="section-heading section-4-heading">Contact Me</h1>
+        <form action="" class="contact-form center">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit" class="contact-form-btn" />
+        </form>
+      </section>
+      <!-- End of section 4 -->
+
+      <!-- Section 5 -->
+      <footer class="section-5 center">
+        <ul class="social-media">
+          <li>
+            <a
+              class="social-media-link"
+              href="https://github.com/abdullahmokhtar"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-media-link"
+              href="https://www.linkedin.com/in/abdullah-mokhtar-370b421b3/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-media-link"
+              href="https://www.facebook.com/abdullah.mokhtar.37/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a class="social-media-link" href="https://wa.me/201094327123"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; CodeAndCreate. All Rights Reserved
+        </p>
+      </footer>
+      <!-- end of section 5 -->
     </div>
   </body>
 </html>
